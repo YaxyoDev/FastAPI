@@ -1,4 +1,7 @@
-SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:1@localhost:5434/TodoApplicationDatabase'
+# SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:1@localhost:5434/TodoApplicationDatabase'
+
+# Asinxron SQLite uchun URL manzil
+SQLALCHEMY_DATABASE_URL = 'sqlite+aiosqlite:///./TodoApplicationDatabase.db'
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
